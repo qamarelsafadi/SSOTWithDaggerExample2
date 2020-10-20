@@ -3,7 +3,7 @@ import com.squareup.moshi.Json
 import net.qamar.ssotwithdaggerexample.data.model.Movie
 import java.util.*
 
-class SearchResult {
+class SearchResult() {
 
     @field:Json(name ="Search")
    var search: ArrayList<Movie>? = null

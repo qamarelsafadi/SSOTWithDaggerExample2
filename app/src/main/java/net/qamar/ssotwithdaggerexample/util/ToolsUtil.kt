@@ -56,6 +56,10 @@ class ToolsUtil {
                 return android.util.Patterns.PHONE.matcher(email).matches()
             }
 
+         fun showToast(message: String , context: Context) {
+            if (message != "")
+                Toast.makeText(context, message, Toast.LENGTH_LONG).show()
+        }
 
 
         fun shareText(subject: String, body: String , context: Context) {
